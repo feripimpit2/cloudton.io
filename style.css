@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, rgba(0, 255, 255, 0.5), rgba(0, 0, 0, 1), rgba(128, 0, 128, 1));
+    color: white;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.rotating-image {
+    width: 200px;
+    height: 200px;
+}
+
+.rotating {
+    animation: rotation 0.8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+button, .telegram-button {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid white;
+    color: white;
+    padding: 10px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+    transition-duration: 0.5s;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.balance-container {
+    margin-top: 20px;
+}
+
+#boost-screen button {
+    display: block;
+    margin: 20px auto;
+}
+
+#withdraw-button {
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+
+button:hover, .telegram-button:hover {
+    background-color: grey;
+}
+
+.telegram-button {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #0088cc;
+}
+
+.telegram-button:hover {
+    background-color: #0077b3;
+}
